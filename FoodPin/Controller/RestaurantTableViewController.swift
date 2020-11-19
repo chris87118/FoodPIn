@@ -12,6 +12,7 @@ class RestaurantTableViewController: UITableViewController {
 
     var restaurants:[Restaurant] = []
        
+    //MARK: - View controller lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -173,6 +174,8 @@ class RestaurantTableViewController: UITableViewController {
             
     return swipeConfiguration
     }
+    
+    //MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       if segue.identifier == "showRestaurantDetail" {
